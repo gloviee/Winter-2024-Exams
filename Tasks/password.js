@@ -1,8 +1,7 @@
 // Generate random password
 
-// Step 2
-// rename variable
-// use assignment operator 
+// Step 3
+// fix my imprint 
 
 
 'use strict';
@@ -12,7 +11,7 @@ const GeneratePassword = (alphabet, size) => {
   let key = '';
   for (let i = 0; i < size; i++) {
     const index = Math.floor(Math.random() * MAX);
-    key += alphabet[Index];
+    key += alphabet[index];
   }
   return key;
 };
