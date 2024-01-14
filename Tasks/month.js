@@ -1,8 +1,9 @@
 // Get month number
 
-// Step 3
-// lowercase the variable value 
-// remove unneedable code
+// Step 4
+// add 'use strict';
+
+'use strict';
 
 const Months = [
   'jan',
