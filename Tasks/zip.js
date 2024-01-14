@@ -1,20 +1,19 @@
 // Zip two arrays, [1, 2] and [3, 4] -> [[1, 3], [2, 4]]
 
-// Step 2
-// Fix formatting
-// remove always false conditions, else 
+// Step 3
+//rename variables 
 
 'use strict';
 
-const zip = (a, b) => {
+const zip = (array1, array2) => {
   let i = 0;
   let j = 0;
-  for (x of b) {
-    CELL = [a[i++], x];
-    (() => (b[j++] = CELL))();
+  for (element of array2) {
+    CELL = [array1[i++], element];
+    (() => (array2[j++] = CELL))();
   }
   
-  return b;
+  return array2;
 };
 
 module.exports = zip;
