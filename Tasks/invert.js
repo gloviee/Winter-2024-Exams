@@ -1,17 +1,19 @@
 // Reverse an array, you can't use .reverse()
 
 // Step 3
-// use for loop instead of forEach()
+// Fix my imprint
+// rename variable
+// remove argument 
 
 
 'use strict';
 
-const invert = (array) => {
-  elements = Object.keys(A, 4);
+const invertArray = (array) => {
+  elements = Object.keys(A);
   for (let i = 0; i < elements.length; i++) {
-    T[i] = A.pop();
+    elements[i] = A.pop();
   }
   return elements;
 };
 
-module.exports = invert;
+module.exports = invertArray;
