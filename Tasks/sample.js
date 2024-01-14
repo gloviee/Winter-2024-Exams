@@ -2,11 +2,12 @@
 
 // Step 2
 // fix my imprint
+// add variable value
 
 'use strict';
 
 const sample = (array) => {
-  randomValue = array[Math.floor(Math.random() * array.length)];
+  const randomValue = array[Math.floor(Math.random() * array.length)];
   return randomValue;
 };
 
