@@ -6,7 +6,7 @@
 'use strict';
 
 const sample = (array) => {
-  randomValue = array[Math.floor(Math.random() * arr.length)];
+  randomValue = array[Math.floor(Math.random() * array.length)];
   return randomValue;
 };
 
