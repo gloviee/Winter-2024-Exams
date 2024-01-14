@@ -1,8 +1,8 @@
 // Get month number
 
-// Step 2
-// rename variables 
-// replace code 
+// Step 3
+// lowercase the variable value 
+// remove unneedable code
 
 const Months = [
   'jan',
@@ -21,8 +21,9 @@ const Months = [
 
 const getMonthNumber = (month) => {
   const amount = Months.length;
+  month = month.toLowerCase();
   for (let i = 0; i < amount; i++) {
-    if (month.startsWith(Months[i].toLowerCase())) return i + 1;
+    if (month.startsWith(Months[i]) return i + 1;
   }
   return -1;
 };
