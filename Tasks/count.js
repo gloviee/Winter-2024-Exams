@@ -7,7 +7,7 @@
 
 'use strict';
 
-const sum = (obj) => {
+const sumKeys = (obj) => {
   let sum = 0;
   const keys = Object.keys(obj);
   
@@ -19,4 +19,4 @@ const sum = (obj) => {
   return sum;
 };
 
-module.exports = sum;
+module.exports = sumKeys;
