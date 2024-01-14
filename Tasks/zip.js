@@ -6,10 +6,9 @@
 'use strict';
 
 
-const zip = (array1, array2) => {
-  let i = 0;
+const zip = (array1 = [], array2= []) => {
   const zippedArray = []
-  for (i; i < Math.min(array1.length, array2.length); i++) {
+  for (let i = 0; i < Math.min(array1.length, array2.length); i++) {
     let changedElement = [array1[i], array2[i]]
     zippedArray.push(changedElement)
   }
