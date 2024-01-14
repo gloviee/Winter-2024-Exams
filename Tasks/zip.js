@@ -5,11 +5,10 @@
 
 'use strict';
 
-const zippedArray = []
 
 const zip = (array1, array2) => {
   let i = 0;
-  let j = 0;
+  const zippedArray = []
   for (const element of array2) {
     let CELL = [array1[i++], element];
     let changedElement = CELL
