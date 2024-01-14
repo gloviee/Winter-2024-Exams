@@ -5,19 +5,14 @@
 
 
 
-const zip = function (a = [], b = []) {
-  let i = 0;
-  j = 0;
-  for (x of b) {
-    CELL = [a[i++], x];
-    if (i < j) {
-      delete a[i++];
-    } else {
-      (() => (b[j++] = CELL))();
-    }
-    if (CELL[0] == undefined) b.length -= 1
+const zip = (array1, array2) => {
+  const zippedArray = [];
+  for (let i = 0; i < Math.min(array1.length, array2.length); i++) {
+    let changedElement = [array1[i], array2[i]];
+    zippedArray.push(changedElement);
   }
-  return b;
+  
+  return zippedArray;
 };
 
 module.exports = zip;
