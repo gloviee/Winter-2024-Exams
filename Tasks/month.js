@@ -1,7 +1,8 @@
 // Get month number
 
-// Step 1
-// add variables type
+// Step 2
+// rename variables 
+// replace code 
 
 const Months = [
   'jan',
@@ -18,12 +19,12 @@ const Months = [
   'dec',
 ];
 
-const Month = (s) => {
-  const l = Months.length;
-  for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
+const getMonthNumber = (month) => {
+  const amount = Months.length;
+  for (let i = 0; i < amount; i++) {
+    if (month.startsWith(Months[i].toLowerCase())) return i + 1;
   }
   return -1;
 };
 
-module.exports = Month;
+module.exports = getMonthNumber;
