@@ -8,7 +8,7 @@
 
 'use strict';
 
-const invertArray = (array) => {
+const invertArray = (array = []) => {
   const elements = Object.keys(array);
   for (let i = 0; i < elements.length; i++) {
     let elements[i] = array.pop();
