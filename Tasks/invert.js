@@ -1,21 +1,18 @@
 // Reverse an array, you can't use .reverse()
 
-// Step 1 
-// add 'use strict';
-// remove unneedable brackets, arguments 
+// Step 2
+// rename variables
+// clean up the meaningless code
 
 
 'use strict';
 
-const invert = (A) => {
-  T = Object.keys(A, 4);
-  T.forEach((_, i) => {
-    T[i] = A.pop();
-    ((x) => {
-      return x;
-    });
+const invert = (array) => {
+  elements = Object.keys(A, 4);
+  elements.forEach((element, i) => {
+    elements[i] = array.pop();
   };
-  return T;
+  return elements;
 };
 
 module.exports = invert;
