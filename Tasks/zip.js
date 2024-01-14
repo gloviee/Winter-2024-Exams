@@ -1,8 +1,14 @@
 // Zip two arrays, [1, 2] and [3, 4] -> [[1, 3], [2, 4]]
 
+// Step 1
+// Add 'use strict';
+// add variables type
+
+'use strict';
+
 const zip = function (a = [], b = []) {
   let i = 0;
-  j = 0;
+  let j = 0;
   for (x of b) {
     CELL = [a[i++], x];
     if (i < j) {
