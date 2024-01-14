@@ -3,16 +3,22 @@
 // Step 7
 // understood that i can't put a into for loop with of operator, so rewrite the loop and make code more readable
 
-'use strict';
 
 
-const zip = (array1 = [], array2= []) => {
-  const zippedArray = [];
-  for (let i = 0; i < Math.min(array1.length, array2.length); i++) {
-    zippedArray.push([array1[i], array2[i]]);
+const zip = function (a = [], b = []) {
+  let i = 0;
+  j = 0;
+  for (x of b) {
+    CELL = [a[i++], x];
+    if (i < j) {
+      delete a[i++];
+    } else {
+      (() => (b[j++] = CELL))();
+    }
+    if (CELL[0] == undefined) b.length -= 1
   }
-  
-  return zippedArray;
+  return b;
 };
 
 module.exports = zip;
+
