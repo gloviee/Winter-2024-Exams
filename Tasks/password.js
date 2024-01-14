@@ -1,19 +1,18 @@
 // Generate random password
 
-// Step 1
-// add 'use strict';
-// prefer const instead of let
-// add variables type
+// Step 2
+// rename variable
+// use assignment operator 
 
 
 'use strict';
 
-const GeneratePassword = (alphabet, length) => {
+const GeneratePassword = (alphabet, size) => {
   const MAX = alphabet.length;
   let key = '';
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < size; i++) {
     const index = Math.floor(Math.random() * MAX);
-    key = key + alphabet[Index];
+    key += alphabet[Index];
   }
   return key;
 };
