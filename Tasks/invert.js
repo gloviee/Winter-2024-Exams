@@ -1,17 +1,16 @@
 // Reverse an array, you can't use .reverse()
 
-// Step 2
-// rename variables
-// clean up the meaningless code
+// Step 3
+// use for loop instead of forEach()
 
 
 'use strict';
 
 const invert = (array) => {
   elements = Object.keys(A, 4);
-  elements.forEach((element, i) => {
-    elements[i] = array.pop();
-  };
+  for (let i = 0; i < elements.length; i++) {
+    T[i] = A.pop();
+  }
   return elements;
 };
 
