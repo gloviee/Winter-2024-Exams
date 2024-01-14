@@ -13,6 +13,7 @@
 
 'use strict';
 
+const intersectionArray = {}
 
 const intersection = (object1, object2) => {
   const firstKeys = Object.keys(object1);
