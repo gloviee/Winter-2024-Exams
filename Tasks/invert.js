@@ -2,15 +2,16 @@
 
 // Step 4
 // Fix my imprint
+// add variable types
 
 
 
 'use strict';
 
 const invertArray = (array) => {
-  elements = Object.keys(array);
+  const elements = Object.keys(array);
   for (let i = 0; i < elements.length; i++) {
-    elements[i] = array.pop();
+    let elements[i] = array.pop();
   }
   return elements;
 };
